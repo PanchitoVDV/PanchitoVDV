@@ -1,10 +1,26 @@
-- 👋 Hi, I’m @PanchitoVDV
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+public class Panchito extends GitHubUser {
 
-<!---
-PanchitoVDV/PanchitoVDV is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+  public Panchito() {
+    super("Panchito", "Belgium");
+
+    this.addLanguage("Java", "C#", "Javascript", "SQL", "PHP");
+  }
+}
+
+public abstract class GitHubUser {
+
+  private final String name;
+  private final String country;
+
+  private ArrayList<String> languages = new ArrayList<>();
+
+  public GitHubUser(String name, String country) {
+      this.name = name;
+      this.country = country;
+  }
+
+  public void addLanguage(String... languages) {
+    languages.addAll(languages);
+  }
+  
+}
