@@ -34,7 +34,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/panchitovdv/panchitovdv/output/snake.svg" alt="Snake animation" />
 
 ###
 
